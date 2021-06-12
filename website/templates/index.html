@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+
+
+<main class="container">
+  <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1 class="display-4">BlockSign</h1>
+    <p class="lead">
+      BlockChain based Certificate. Create and Verify Certificate any time any where.
+    </p>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+    <div class="col">
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 fw-normal">...</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">Create</h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Create BlockSign Certificate</li>
+          </ul>
+          <a href="/createCertificate">
+            <button type="submit" class="w-100 btn btn-lg btn-primary">Create Certificate</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 fw-normal">...</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">Verify</h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Verify any BlockSign Certificate</li>
+            
+          </ul>
+          <a href="/verifyCertificate">
+          <button type="button" class="w-100 btn btn-lg btn-primary">Verify Certificate</button>
+        </a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 fw-normal">...</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">CMC</h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Create Multiple Certificate From CSV File.</li>
+          </ul>
+          <a href="/csvCertificate">
+          <button type="button" class="w-100 btn btn-lg btn-primary">Create</button>
+        </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</main>
+
+{% endblock %}

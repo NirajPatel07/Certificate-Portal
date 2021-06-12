@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<br>
+
+<div class="container ">
+  
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="row" colspan="2">Certificate Details</th>
+      </tr>
+    </thead>
+    {% for key, value in data.items() %}
+    <tbody>
+      <tr>
+        <th scope="row">{{ key }}</th>
+        <td>{{ value }}</td>
+      </tr>
+    </tbody>
+    {% endfor %}
+  </table>
+
+  <br>
+
+  <a href="{{ url_for('blockChain.downloadCertificate', my_var=data['Name']) }}">
+    <button type="button" class="btn btn-primary">Download Certificate</button>
+  </a>
+
+</div>
+
+{% endblock %}
